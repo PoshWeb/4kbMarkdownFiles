@@ -35,6 +35,10 @@ jobs:
         with:
           # Using fetch-depth: 0 to ensure we get the full history of the repository
           fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@main
+        with:
+          node-version: latest
       - name: Setup Pages
         uses: actions/configure-pages@main
       - name: Build Pages
